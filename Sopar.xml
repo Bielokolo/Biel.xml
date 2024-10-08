@@ -1,0 +1,33 @@
+
+
+<sopar>
+  <taula>5</taula>
+  <comensal>
+    <nom>Anna</nom>
+    <beguda>Aigua</beguda>
+  </comensal>
+  <comensal>
+    <nom>Pere</nom>
+  </comensal>
+  <plats>
+    <plat>
+      <nom>Pasta carbonara</nom>
+      <aliments>
+        <aliment>Pasta</aliment>
+        <aliment>Crema</aliment>
+        <aliment>Bacon</aliment>
+      </aliments>
+      <preu>12.50</preu>
+    </plat>
+    <plat>
+      <nom>Amanida</nom>
+      <aliments>
+        <aliment>Enciam</aliment>
+        <aliment>Tomàquet</aliment>
+        <aliment>Oli d'oliva</aliment>
+      </aliments>
+      <preu>7.00</preu>
+    </plat>
+  </plats>
+  <total>19.50</total>
+</sopar>

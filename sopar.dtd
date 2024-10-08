@@ -1,0 +1,33 @@
+
+<!ELEMENT sopar (taula, client+, plats, total)> 
+<!-- L'element principal "sopar" Conté els elements taula, client (un o més), plats i total. -->
+
+<!ELEMENT taula (#PCDATA)> 
+<!-- "taula" conté el número de la taula (dades de text pur). -->
+
+<!ELEMENT client (nom, beguda?)> 
+<!-- "client" representa cada persona que participa en el sopar. Té dos elements: nom (obligatori) i beguda (opcional, indicat amb ?). -->
+
+<!ELEMENT nom (#PCDATA)> 
+<!-- "nom" conté el nom del client (text pur). -->
+
+<!ELEMENT beguda (#PCDATA)> 
+<!-- "beguda" conté la beguda que ha demanat el client. És un element opcional. -->
+
+<!ELEMENT plats (plat+)> 
+<!-- "plats" és una llista que conté un o més plats demanats pels clients (indicat amb el +, almenys un plat). -->
+
+<!ELEMENT plat (nom, aliments, preu)> 
+<!-- "plat" conté la informació d'un plat específic, amb els seus elements: nom (del plat), aliments (una llista d'aliments) i preu. -->
+
+<!ELEMENT aliments (aliment+)> 
+<!-- "aliments" és una llista que conté un o més "aliment" (indicat amb +, almenys un aliment per plat). -->
+
+<!ELEMENT aliment (#PCDATA)> 
+<!-- "aliment" conté el nom d'un aliment o ingredient d'un plat (text pur). -->
+
+<!ELEMENT preu (#PCDATA)> 
+<!-- "preu" conté el preu d'un plat (text pur). -->
+
+<!ELEMENT total (#PCDATA)> 
+<!-- "total" és el preu total del sopar, sumant el cost de tots els plats (text pur). -->
